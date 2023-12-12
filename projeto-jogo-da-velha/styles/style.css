@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    width: 99vw;
+    height: 95vh ;
+    background: linear-gradient(68deg, #C5DECD 16.62%, #A1E8CC 85.61%);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    content: "\1F383";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.x{
+    position: relative;
+}
+/* U+2B55 */
+/* U+2716 U+FE0F */
+.x:after{
+    content: "\1F47B";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+button{
+    padding: 20px;
+    background-color: #20575c;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}

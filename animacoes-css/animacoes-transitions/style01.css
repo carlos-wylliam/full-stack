@@ -1,0 +1,20 @@
+.btn {
+    padding: 20px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    /* transition-property: background-color, padding; */
+    /* transition-duration: 500ms, 1s; */
+    /* transition-delay: 100ms; */
+    /* transition-timing-function: ease; */
+
+    transition: background-color 500ms 1s ease-out, padding 3s;
+}
+
+.btn:hover{
+    background-color: #2248CA;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
