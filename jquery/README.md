@@ -129,5 +129,50 @@ lista1.append("<li>Teste da silva Junior</li>")
 lista1.prepend("<li>Teste da silva Junior</li>")
 ```
 
+## Modificando o CSS
+Nesse tópico iremos aprender a como modificar o css através do Jquery
+<br>
+<br>
 
+Exemplo HTML:
+```html
+<h1 class ="Titulo">Lista de Compras</h1>
+
+```
+Exemplo CSS:
+```css
+    .bg-blue {
+        background-color: blue
+    }
+```
+
+**adicionando a classe ao HTML**
+
+para adicionar essa classe no html usando o Jquery basta fazer isso daqui:
+
+``` javascript
+$("h1").addClass("bg-blue")
+
+// selecionei a tag H1 e adicionei a classe bg-blue que eu criei em meu arquivo css, dessa maneira o titulo vai ter um background blue.
+```
+
+**Lendo uma propriedade css** 
+<br>
+Se eu quiser por exemplo ler a propriedade background-color que existe na classe .bg-blue, que está sendo setada na tag H1 basta eu fazer isso daqui.
+
+```javascript
+    console.log($("h1").css("background-color"))
+    
+    // o retorno desse console.log nesse caso especifico seria
+    // rgb(0,0,255)
+```
+
+```javascript
+    console.log($("h1").css({
+        "background-color":"blue",
+        "font-size":"80px"
+    }))
+
+    //isso daqui é auto-explicativo então fodase.
+```
 
